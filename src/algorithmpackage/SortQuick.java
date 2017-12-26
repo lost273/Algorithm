@@ -35,3 +35,21 @@ public class SortQuick {
         }
     }
 }
+class Start{
+    public static void main(String[] args){
+        char a[] = {'d', 'x', 'a', 'r', 'p', 'j', 'i'};
+        int i;
+        
+        System.out.print("current array:");
+        for(i = 0; i < a.length; i++){
+            System.out.print(a[i]);
+        }
+        System.out.println();
+        SortQuick.qsort(a);
+        
+        System.out.print("sorted array:");
+        for(i = 0; i < a.length; i++){
+            System.out.print(a[i]);
+        }
+    }
+}
