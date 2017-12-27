@@ -7,16 +7,16 @@ void selectSort(T a[], long size) {
   long i, j, k; 
   T x;
 
-     	// i - number of the current step
+  // i - number of the current step
   for( i=0; i < size; i++) {
     k=i; x=a[i];
-// the cycle for selecting the smallest element
+    // the cycle for selecting the smallest element
     for( j=i+1; j < size; j++)	
       if (  a[j] < x ) {
           // k - index of the smallest element
         k=j; x=a[j];	        
       }
-// меняем местами наименьший с a[i]
+    // swap places least
     a[k] = a[i]; a[i] = x;   	
   }
 }
