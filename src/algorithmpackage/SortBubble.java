@@ -2,15 +2,12 @@
 package algorithmpackage;
 
 public class SortBubble {
-    static void bsort(char items[]){
-        qs(items, 0, items.length-1);
-    }
+    static void bsort(int nums[]){
         int a, b, t;
-        int size;
         
         //algorithm
-        for(a = 1; a < size; a++){
-            for(b = size - 1; b >= a; b--){
+        for(a = 1; a < nums.length; a++){
+            for(b = nums.length - 1; b >= a; b--){
                 if(nums[b-1] > nums[b]){
                     t = nums[b-1];
                     nums[b-1] = nums[b];
@@ -18,19 +15,15 @@ public class SortBubble {
                 }
             }
         }
-        
-    
+    }
 }
-class Start{
+class StartSortBubble{
     public static void main(String[] args){
         int nums[] = {99, -10, 100123, 18, -978,
                      5623, 463, -9, 287, 49};
-        //number of elements
-        size = 10;
-        
         //display the array
         System.out.print("current array:");
-        for(int i = 0; i < size; i++){
+        for(int i = 0; i < nums.length; i++){
             System.out.print(" " + nums[i]);
         }
         System.out.println();
@@ -39,7 +32,7 @@ class Start{
         
         //display the array
         System.out.print("sorted array:");
-        for(int i = 0; i < size; i++){
+        for(int i = 0; i < nums.length; i++){
             System.out.print(" " + nums[i]);
         }
         System.out.println();

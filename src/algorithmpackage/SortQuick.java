@@ -35,7 +35,7 @@ public class SortQuick {
         }
     }
 }
-class Start{
+class StartSortQuick{
     public static void main(String[] args){
         char a[] = {'d', 'x', 'a', 'r', 'p', 'j', 'i'};
         int i;
