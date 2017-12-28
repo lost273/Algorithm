@@ -4,7 +4,7 @@ package algorithmpackage;
 import displaypackage.*;
 
 public class SortSelect {
-    static void selectSort(int a[]) {
+    static void Sort(int a[]) {
         int i, j, k;
         int x;
         // i - number of the current step
@@ -32,7 +32,7 @@ class StartSortSelect{
        
         Display.IntDisplay("Current array:", nums);
         
-        SortBubble.bsort(nums);
+        SortSelect.Sort(nums);
         
         Display.IntDisplay("Sorted array:", nums);
         

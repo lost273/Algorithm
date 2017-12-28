@@ -1,8 +1,10 @@
 
 package algorithmpackage;
 
+import displaypackage.*;
+
 public class SortBubble {
-    static void bsort(int nums[]){
+    static void Sort(int nums[]){
         int a, b, t;
         
         //algorithm
@@ -21,20 +23,10 @@ class StartSortBubble{
     public static void main(String[] args){
         int nums[] = {99, -10, 100123, 18, -978,
                      5623, 463, -9, 287, 49};
-        //display the array
-        System.out.print("current array:");
-        for(int i = 0; i < nums.length; i++){
-            System.out.print(" " + nums[i]);
-        }
-        System.out.println();
+        Display.IntDisplay("Current array:", nums);
         
-        SortBubble.bsort(nums);
-        
-        //display the array
-        System.out.print("sorted array:");
-        for(int i = 0; i < nums.length; i++){
-            System.out.print(" " + nums[i]);
-        }
-        System.out.println();
+        SortBubble.Sort(nums);
+      
+        Display.IntDisplay("Sorted array:", nums);
     }
 }
