@@ -2,11 +2,9 @@
 package algorithmpackage;
 
 public class SortSelect {
-    template<class T>
-void selectSort(T a[], long size) {
+static void selectSort(int a[]) {
   long i, j, k; 
-  T x;
-
+  int x[];
   // i - number of the current step
   for( i=0; i < size; i++) {
     k=i; x=a[i];
@@ -23,19 +21,20 @@ void selectSort(T a[], long size) {
 }
 class StartSortSelect{
     public static void main(String[] args){
-        char a[] = {'d', 'x', 'a', 'r', 'p', 'j', 'i'};
+        int nums[] = {99, -10, 100123, 18, -978,
+                     5623, 463, -9, 287, 49};
         int i;
         
         System.out.print("current array:");
-        for(i = 0; i < a.length; i++){
-            System.out.print(a[i]);
+        for(i = 0; i < nums.length; i++){
+            System.out.print(nums[i]);
         }
         System.out.println();
-        SortQuick.qsort(a);
+        SortSelect.selectSort(nums);
         
         System.out.print("sorted array:");
-        for(i = 0; i < a.length; i++){
-            System.out.print(a[i]);
+        for(i = 0; i < nums.length; i++){
+            System.out.print(nums[i]);
         }
     }
 }
