@@ -1,6 +1,8 @@
 
 package algorithmpackage;
 
+import displaypackage.Display;
+
 public class SortQuick {
     static void qsort(char items[]){
         qs(items, 0, items.length-1);
@@ -38,18 +40,11 @@ public class SortQuick {
 class StartSortQuick{
     public static void main(String[] args){
         char a[] = {'d', 'x', 'a', 'r', 'p', 'j', 'i'};
-        int i;
         
-        System.out.print("current array:");
-        for(i = 0; i < a.length; i++){
-            System.out.print(a[i]);
-        }
-        System.out.println();
+        Display.CharDisplay("Current array:", a);
+        
         SortQuick.qsort(a);
         
-        System.out.print("sorted array:");
-        for(i = 0; i < a.length; i++){
-            System.out.print(a[i]);
-        }
+        Display.CharDisplay("Sorted array:", a);
     }
 }
