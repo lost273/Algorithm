@@ -1,10 +1,10 @@
 
 package algorithmpackage;
 
-import displaypackage.Display;
+import displaypackage.*;
 
 public class SortQuick {
-    static void qsort(char items[]){
+    static void Sort(char items[]){
         qs(items, 0, items.length-1);
     }
     //recursive version
@@ -43,7 +43,7 @@ class StartSortQuick{
         
         Display.CharDisplay("Current array:", a);
         
-        SortQuick.qsort(a);
+        SortQuick.Sort(a);
         
         Display.CharDisplay("Sorted array:", a);
     }
