@@ -4,7 +4,7 @@ package algorithmpackage;
 import displaypackage.*;
 
 public class SortQuick {
-    static void Sort(char items[]){
+    public static void Sort(char items[]){
         qs(items, 0, items.length-1);
     }
     //recursive version
@@ -35,16 +35,5 @@ public class SortQuick {
         if(i < right){
             qs(items, i, right);
         }
-    }
-}
-class StartSortQuick{
-    public static void main(String[] args){
-        char a[] = {'d', 'x', 'a', 'r', 'p', 'j', 'i'};
-        
-        Display.CharDisplay("Current array:", a);
-        
-        SortQuick.Sort(a);
-        
-        Display.CharDisplay("Sorted array:", a);
     }
 }
