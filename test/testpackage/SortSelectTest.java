@@ -2,9 +2,10 @@
 package testpackage;
 
 import modelpackage.*;
+import algorithmpackage.*;
 
-class SortSelectTest{
+public class SortSelectTest{
     public static void main(String[] args){
-        TestModel.StartIntTest();
+        TestModel.StartIntTest(new SortSelect());
     }
 }

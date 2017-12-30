@@ -4,11 +4,11 @@ package algorithmpackage;
 import displaypackage.*;
 
 public class SortQuick extends Algorithm {
-    public static void Sort(char items[]){
+    public void Sort(char items[]){
         qs(items, 0, items.length-1);
     }
     //recursive version
-    private static void qs(char items[], int left, int right){
+    private void qs(char items[], int left, int right){
         int i, j;
         char x,y;
         

@@ -4,7 +4,7 @@ package algorithmpackage;
 import displaypackage.*;
 
 public class SortBubble extends Algorithm{
-    public static void Sort(int nums[]){
+    public void Sort(int nums[]){
         int a, b, t;
         
         //algorithm
