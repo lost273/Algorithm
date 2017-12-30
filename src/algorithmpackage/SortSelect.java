@@ -3,7 +3,7 @@ package algorithmpackage;
 
 import displaypackage.*;
 
-public class SortSelect {
+public class SortSelect extends Algorithm {
     public static void Sort(int a[]) {
         int i, j, k;
         int x;

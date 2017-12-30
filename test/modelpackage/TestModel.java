@@ -1,8 +1,8 @@
 
 package modelpackage;
 
-import algorithmpackage.SortSelect;
-import displaypackage.Display;
+import algorithmpackage.*;
+import displaypackage.*;
 
 public class TestModel {
     private static String IntCompare(int unsorted[], int sorted[]){
@@ -13,7 +13,7 @@ public class TestModel {
         }
         return "SUCCESS";
     }
-    public static void StartIntTest(){
+    public static void StartIntTest(Algorithm algorithm){
         int nums[] = {99, -10, 100123, 18, -978,
                      5623, 463, -9, 287, 49};
         int numsOK[] = {-978, -10, -9, 18, 49,
@@ -23,7 +23,7 @@ public class TestModel {
         
         System.out.println("Before sort. Test is " + IntCompare(nums, numsOK));
         
-        SortSelect.Sort(nums);
+        algorithm.Sort(nums);
       
         Display.IntDisplay("Sorted array:", nums);
         

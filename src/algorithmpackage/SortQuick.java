@@ -3,7 +3,7 @@ package algorithmpackage;
 
 import displaypackage.*;
 
-public class SortQuick {
+public class SortQuick extends Algorithm {
     public static void Sort(char items[]){
         qs(items, 0, items.length-1);
     }
