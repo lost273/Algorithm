@@ -4,7 +4,7 @@ package algorithmpackage;
 import displaypackage.*;
 
 public class SortSelect {
-    static void Sort(int a[]) {
+    public static void Sort(int a[]) {
         int i, j, k;
         int x;
         // i - number of the current step
