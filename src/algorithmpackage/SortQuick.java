@@ -7,13 +7,12 @@ public class SortQuick extends Algorithm {
     public SortQuick(){
         super("SortQuick");
     }
-    public void Sort(char items[]){
+    public void Sort(int items[]){
         qs(items, 0, items.length-1);
     }
     //recursive version
-    private void qs(char items[], int left, int right){
-        int i, j;
-        char x,y;
+    private void qs(int items[], int left, int right){
+        int i, j, x, y;
         
         i = left; j = right;
         x = items[(left+right)/2];
