@@ -1,8 +1,6 @@
 
 package algorithmpackage;
 
-import displaypackage.*;
-
 public class SortBubble extends Algorithm{
     public SortBubble(){
         super("SortBubble");

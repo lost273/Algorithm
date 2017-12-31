@@ -1,15 +1,12 @@
 
 package algorithmpackage;
 
-import displaypackage.*;
-
 public class SortSelect extends Algorithm {
     public SortSelect(){
         super("SortSelect");
     }
     public void Sort(int a[]) {
-        int i, j, k;
-        int x;
+        int i, j, k, x;
         // i - number of the current step
         for( i = 0; i < a.length; i++) {
             k = i;

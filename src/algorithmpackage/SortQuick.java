@@ -1,8 +1,6 @@
 
 package algorithmpackage;
 
-import displaypackage.*;
-
 public class SortQuick extends Algorithm {
     public SortQuick(){
         super("SortQuick");
