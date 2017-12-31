@@ -4,12 +4,8 @@ package algorithmpackage;
 import displaypackage.*;
 
 public class SortSelect extends Algorithm {
-    private final String algorithmName;
     public SortSelect(){
-        algorithmName = "SortSelect";
-    }
-    public String GetName(){
-        return algorithmName;
+        super("SortSelect");
     }
     public void Sort(int a[]) {
         int i, j, k;
