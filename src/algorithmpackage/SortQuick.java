@@ -4,6 +4,13 @@ package algorithmpackage;
 import displaypackage.*;
 
 public class SortQuick extends Algorithm {
+    private final String algorithmName;
+    public SortQuick(){
+        algorithmName = "SortQuick";
+    }
+    public String GetName(){
+        return algorithmName;
+    }
     public void Sort(char items[]){
         qs(items, 0, items.length-1);
     }

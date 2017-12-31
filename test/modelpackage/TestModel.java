@@ -19,6 +19,8 @@ public class TestModel {
         int numsOK[] = {-978, -10, -9, 18, 49,
                      99, 287, 463, 5623, 100123};
         
+        System.out.println("Current algorithm - <" + algorithm.GetName() + "");
+        
         Display.IntDisplay("Current array:", nums);
         
         System.out.println("Before sort. Test is " + IntCompare(nums, numsOK));

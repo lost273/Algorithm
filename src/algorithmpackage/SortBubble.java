@@ -4,6 +4,13 @@ package algorithmpackage;
 import displaypackage.*;
 
 public class SortBubble extends Algorithm{
+    private final String algorithmName;
+    public SortBubble(){
+        algorithmName = "SortBubble";
+    }
+    public String GetName(){
+        return algorithmName;
+    }
     public void Sort(int nums[]){
         int a, b, t;
         
