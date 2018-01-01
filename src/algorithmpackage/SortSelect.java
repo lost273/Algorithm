@@ -5,6 +5,7 @@ public class SortSelect extends Algorithm {
     public SortSelect(){
         super("SortSelect");
     }
+    @Override
     public void Sort(int a[]) {
         int i, j, k, x;
         // i - number of the current step

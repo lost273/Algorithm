@@ -5,6 +5,7 @@ public class SortQuick extends Algorithm {
     public SortQuick(){
         super("SortQuick");
     }
+    @Override
     public void Sort(int items[]){
         qs(items, 0, items.length-1);
     }

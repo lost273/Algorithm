@@ -5,6 +5,7 @@ public class SortInsert extends Algorithm {
     public SortInsert(){
         super("SortInsert");
     }
+    @Override
     public void Sort(int a[]){
         int i, j, x;
         for ( i = 0; i < a.length; i++) {

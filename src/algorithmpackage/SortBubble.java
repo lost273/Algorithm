@@ -5,6 +5,7 @@ public class SortBubble extends Algorithm{
     public SortBubble(){
         super("SortBubble");
     }
+    @Override
     public void Sort(int nums[]){
         int a, b, t;
         

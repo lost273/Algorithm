@@ -11,7 +11,7 @@ public class SortShell extends Algorithm {
         s = -1;
         
         do {
-            if ((++s % 2) == 0) {
+            if ((++s % 2) != 0) {
                 inc[s] = 8*p1 - 6*p2 + 1;
             } else {
                 inc[s] = 9*p1 - 9*p3 + 1;
@@ -23,6 +23,7 @@ public class SortShell extends Algorithm {
         return s > 0 ? --s : 0;
     }
     
+    @Override
     public void Sort(int a[]) {
         int inc, i, j, s;
         int seq[] = new int[40];
