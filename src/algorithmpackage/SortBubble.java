@@ -5,10 +5,9 @@ public class SortBubble extends Algorithm{
     public SortBubble(){
         super("SortBubble");
     }
-    @Override
-    public void Sort(int nums[]){
-        int a, b, t;
-        
+   @Override
+    public <T> void Sort(T[] array){
+        int b, t;
         //algorithm
         for(a = 1; a < nums.length; a++){
             for(b = nums.length - 1; b >= a; b--){

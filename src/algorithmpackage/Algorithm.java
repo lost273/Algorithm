@@ -9,5 +9,5 @@ public abstract class Algorithm {
     public String GetName(){
         return algorithmName;
     }
-    public abstract void Sort(int a[]);
+    public abstract <T> void Sort(T[] a);
 }
