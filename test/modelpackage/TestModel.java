@@ -4,7 +4,8 @@ package modelpackage;
 import algorithmpackage.*;
 import displaypackage.*;
 
-public class TestModel {
+public class TestModel<T> {
+    private T[] array;
     private static <T> String IntCompare(T[] unsorted, T[] sorted){
         for(int i = 0; i < unsorted.length; i++){
             if(unsorted[i] != sorted[i]){
