@@ -26,12 +26,5 @@ public class SortBubble <T> extends Algorithm{
                 }
             }
         }
-        
-        if(array.getClass().getName() == "java.lang.Integer"){
-            arrayInt = new int[array.length];       
-            for(int i = 0; i < array.length; i++){
-                (Integer)array[i] = arrayInt[i];
-            }
-        }
     }
 }
