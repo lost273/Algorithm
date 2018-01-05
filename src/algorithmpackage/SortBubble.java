@@ -8,10 +8,9 @@ public class SortBubble extends Algorithm{
    @Override
     public <T> void Sort(T[] array){
         int a, b, t;
-        if(<T> is Integer) {}
-        Class<?> temp[] = array.getClass();
+        
         //algorithm
-        for(a = 1; a < temp.length; a++){
+        for(a = 1; a < array.length; a++){
             for(b = array.length - 1; b >= a; b--){
                 if(temp[b-1] > temp[b]){
                     t = array[b-1];
