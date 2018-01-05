@@ -1,17 +1,18 @@
 
 package algorithmpackage;
 
-public class SortBubble extends Algorithm{
-    public SortBubble(){
-        super("SortBubble");
+public class SortBubble <T> extends Algorithm{
+    public SortBubble(T[] array){
+        super("SortBubble", array);
     }
    @Override
-    public <T> void Sort(T[] array){
+    public void Sort(){
         int a, b, t;
+        int size = GetArrayLength();
         
         //algorithm
-        for(a = 1; a < array.length; a++){
-            for(b = array.length - 1; b >= a; b--){
+        for(a = 1; a < size; a++){
+            for(b = size - 1; b >= a; b--){
                 if(temp[b-1] > temp[b]){
                     t = array[b-1];
                     array[b-1] = array[b];
