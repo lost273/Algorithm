@@ -2,22 +2,35 @@
 package algorithmpackage;
 
 public class SortBubble <T> extends Algorithm{
-    public SortBubble(T[] array){
-        super("SortBubble", array);
+    public SortBubble(){
+        super("SortBubble");
     }
    @Override
-    public void Sort(){
+    public <T> void Sort(T[] array){
         int a, b, t;
-        int size = GetArrayLength();
+        
+        if(array.getClass().getName() == "java.lang.Integer"){
+            arrayInt = new int[array.length];        
+            for(int i = 0; i < array.length; i++){
+                arrayInt[i] = (Integer)array[i];
+            }
+        }
         
         //algorithm
-        for(a = 1; a < size; a++){
-            for(b = size - 1; b >= a; b--){
-                if(temp[b-1] > temp[b]){
-                    t = array[b-1];
-                    array[b-1] = array[b];
-                    array[b] = t;
+        for(a = 1; a < arrayInt.length; a++){
+            for(b = arrayInt.length - 1; b >= a; b--){
+                if(arrayInt[b-1] > arrayInt[b]){
+                    t = arrayInt[b-1];
+                    arrayInt[b-1] = arrayInt[b];
+                    arrayInt[b] = t;
                 }
+            }
+        }
+        
+        if(array.getClass().getName() == "java.lang.Integer"){
+            arrayInt = new int[array.length];       
+            for(int i = 0; i < array.length; i++){
+                (Integer)array[i] = arrayInt[i];
             }
         }
     }
