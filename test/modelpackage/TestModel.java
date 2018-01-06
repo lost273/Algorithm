@@ -4,7 +4,18 @@ package modelpackage;
 import algorithmpackage.*;
 import displaypackage.*;
 
+enum TypeOfArray {
+    I,
+    C,
+    D
+}
+
 public class TestModel {
+    private static Object[][] commonArray = {
+        {99, -10, 100123, 18, -978, 5623, 463, -9, 287, 49},
+        {'b','a','t','g','e','m','r','q','c'}
+    };
+    
     private static <T> String IntCompare(T[] unsorted, T[] sorted){
         for(int i = 0; i < unsorted.length; i++){
             if(!unsorted[i].equals(sorted[i])){
@@ -13,7 +24,7 @@ public class TestModel {
         }
         return "SUCCESS";
     }
-    public static void StartTest(Algorithm algorithm){
+    public static <T> void StartTest(Algorithm algorithm, String param){
         Integer[] nums = {99, -10, 100123, 18, -978,
                      5623, 463, -9, 287, 49};
         
@@ -22,14 +33,14 @@ public class TestModel {
         
         System.out.println("Current algorithm - <" + algorithm.GetName() + ">");
         
-        Display.ConDisplay("Current array:", nums);
+        Display.ConDisplay("Current array:", a);
         
-        System.out.println("Before sort. Test is " + IntCompare(nums, numsOK));
+        System.out.println("Before sort. Test is " + IntCompare(a, aOK));
         
-        algorithm.Sort(nums);
+        algorithm.Sort(a);
       
-        Display.ConDisplay("Sorted array:", nums);
+        Display.ConDisplay("Sorted array:", a);
         
-        System.out.println("After sort. Test is " + IntCompare(nums, numsOK));
+        System.out.println("After sort. Test is " + IntCompare(a, aOK));
     } 
 }
