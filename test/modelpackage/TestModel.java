@@ -30,7 +30,7 @@ public class TestModel {
         
         algorithm.Sort(nums);
       
-        Display.ConDisplay("Sorted array:", (Integer[])algorithm.arrayInt);
+        Display.ConDisplayInt("Sorted array:", algorithm.arrayInt);
         
         System.out.println("After sort. Test is " + IntCompare(nums, numsOK));
     } 

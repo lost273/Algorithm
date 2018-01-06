@@ -9,4 +9,11 @@ public class Display {
         }
         System.out.println();
     }
+    public static void ConDisplayInt(String msg, int[] nums){
+        System.out.print(msg);
+        for(int i = 0; i < nums.length; i++){
+            System.out.print(" " + nums[i]);
+        }
+        System.out.println();
+    }
 }

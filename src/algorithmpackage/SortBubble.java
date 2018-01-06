@@ -1,6 +1,8 @@
 
 package algorithmpackage;
 
+import displaypackage.Display;
+
 public class SortBubble <T> extends Algorithm{
     public SortBubble(){
         super("SortBubble");
@@ -15,7 +17,7 @@ public class SortBubble <T> extends Algorithm{
                 arrayInt[i] = (Integer)array[i];
             }
         }
-        
+        Display.ConDisplayInt("Sorted array:", arrayInt);
         //algorithm
         for(a = 1; a < arrayInt.length; a++){
             for(b = arrayInt.length - 1; b >= a; b--){
