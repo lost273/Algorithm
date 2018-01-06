@@ -1,30 +1,21 @@
 
 package algorithmpackage;
 
-import displaypackage.Display;
-
 public class SortBubble <T> extends Algorithm{
     public SortBubble(){
         super("SortBubble");
     }
    @Override
     public <T> void Sort(T[] array){
-        int a, b, t;
-        
-        if(array.getClass().getName() == "java.lang.Integer"){
-            arrayInt = new int[array.length];        
-            for(int i = 0; i < array.length; i++){
-                arrayInt[i] = (Integer)array[i];
-            }
-        }
-        Display.ConDisplayInt("Sorted array:", arrayInt);
+        int a, b;
+        T t;
         //algorithm
-        for(a = 1; a < arrayInt.length; a++){
-            for(b = arrayInt.length - 1; b >= a; b--){
-                if(arrayInt[b-1] > arrayInt[b]){
-                    t = arrayInt[b-1];
-                    arrayInt[b-1] = arrayInt[b];
-                    arrayInt[b] = t;
+        for(a = 1; a < array.length; a++){
+            for(b = array.length - 1; b >= a; b--){
+                if(MoreOperator(array[b-1], array[b])){
+                    t = array[b-1];
+                    array[b-1] = array[b];
+                    array[b] = t;
                 }
             }
         }
