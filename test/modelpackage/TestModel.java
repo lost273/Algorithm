@@ -5,17 +5,15 @@ import algorithmpackage.*;
 import displaypackage.*;
 
 public class TestModel {
-    
-    
     private static <T> String IntCompare(T[] unsorted, T[] sorted){
         for(int i = 0; i < unsorted.length; i++){
-            if(unsorted[i] != sorted[i]){
+            if(!unsorted[i].equals(sorted[i])){
                 return "FAIL";
             }
         }
         return "SUCCESS";
     }
-    public static void StartIntTest(Algorithm algorithm){
+    public static void StartTest(Algorithm algorithm){
         Integer[] nums = {99, -10, 100123, 18, -978,
                      5623, 463, -9, 287, 49};
         
