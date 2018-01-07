@@ -13,7 +13,6 @@ public abstract class Algorithm {
         return algorithmName;
     }
     //objectOne > objectTwo;
-    //Arrays.stream(arrayInt).boxed().toArray( Integer[]::new );
     public <T> boolean MoreOperator(T objectOne, T objectTwo){
         if(objectOne.getClass().getName() == "java.lang.Integer"){
            int one = (Integer)objectOne;
@@ -23,6 +22,11 @@ public abstract class Algorithm {
         if(objectOne.getClass().getName() == "java.lang.Character"){
            char one = (Character)objectOne;
            char two = (Character)objectTwo;
+           if(one > two) return true;
+        }
+        if(objectOne.getClass().getName() == "java.lang.Double"){
+           double one = (Double)objectOne;
+           double two = (Double)objectTwo;
            if(one > two) return true;
         }
         return false;

@@ -10,15 +10,18 @@ enum TypeOfArray {
     C,
     D
 }
-
+//for pack int to Integer
+//Arrays.stream(arrayInt).boxed().toArray( Integer[]::new );
 public class TestModel {
     private static Object[][] commonArray = {
         {99, -10, 100123, 18, -978, 5623, 463, -9, 287, 49},
-        {'b','a','t','g','e','m','r','q','c'}
+        {'b','a','t','g','e','m','r','q','c'},
+        {30.5, 10.02, 56.17, -1.01, 7.66, 5.17, 1000.33, -500.9}
     };
     private static Object[][] testArray = {
         {-978, -10, -9, 18, 49, 99, 287, 463, 5623, 100123},
-        {'a','b','c','e','g','m','q','r','t'}
+        {'a','b','c','e','g','m','q','r','t'},
+        {-500.9, -1.01, 5.17, 7.66, 10.02, 30.5, 56.17, 1000.33}
     };
     
     private static <T> String IntCompare(T[] unsorted, T[] sorted){
