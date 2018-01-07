@@ -18,7 +18,7 @@ public class TestModel {
     };
     private static Object[][] testArray = {
         {-978, -10, -9, 18, 49, 99, 287, 463, 5623, 100123},
-        {'b','a','t','g','e','m','r','q','c'}
+        {'a','b','c','e','g','m','q','r','t'}
     };
     
     private static <T> String IntCompare(T[] unsorted, T[] sorted){

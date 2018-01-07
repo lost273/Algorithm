@@ -20,6 +20,11 @@ public abstract class Algorithm {
            int two = (Integer)objectTwo;
            if(one > two) return true;
         }
+        if(objectOne.getClass().getName() == "java.lang.Character"){
+           char one = (Character)objectOne;
+           char two = (Character)objectTwo;
+           if(one > two) return true;
+        }
         return false;
     }
     
