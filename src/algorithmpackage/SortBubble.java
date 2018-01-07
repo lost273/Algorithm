@@ -7,15 +7,15 @@ public class SortBubble <T> extends Algorithm{
     }
    @Override
     public <T> void Sort(T[] array){
-        int a, b;
-        T t;
+        int i, j;
+        T temp;
         //algorithm
-        for(a = 1; a < array.length; a++){
-            for(b = array.length - 1; b >= a; b--){
-                if(MoreOperator(array[b-1], array[b])){
-                    t = array[b-1];
-                    array[b-1] = array[b];
-                    array[b] = t;
+        for(i = 1; i < array.length; i++){
+            for(j = array.length - 1; j >= i; j--){
+                if(MoreOperator(array[j-1], array[j])){
+                    temp = array[j-1];
+                    array[j-1] = array[j];
+                    array[j] = temp;
                 }
             }
         }

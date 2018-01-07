@@ -6,6 +6,6 @@ import algorithmpackage.*;
 
 public class SortHeapTest {
     public static void main(String[] args){
-        TestModel.StartIntTest(new SortHeap());
+        TestModel.StartTest(new SortHeap());
     }
 }

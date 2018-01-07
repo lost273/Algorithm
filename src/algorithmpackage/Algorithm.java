@@ -14,17 +14,17 @@ public abstract class Algorithm {
     }
     //objectOne > objectTwo;
     public <T> boolean MoreOperator(T objectOne, T objectTwo){
-        if(objectOne.getClass().getName() == "java.lang.Integer"){
+        if(objectOne.getClass().getName().equals("java.lang.Integer")){
            int one = (Integer)objectOne;
            int two = (Integer)objectTwo;
            if(one > two) return true;
         }
-        if(objectOne.getClass().getName() == "java.lang.Character"){
+        if(objectOne.getClass().getName().equals("java.lang.Character")){
            char one = (Character)objectOne;
            char two = (Character)objectTwo;
            if(one > two) return true;
         }
-        if(objectOne.getClass().getName() == "java.lang.Double"){
+        if(objectOne.getClass().getName().equals("java.lang.Double")){
            double one = (Double)objectOne;
            double two = (Double)objectTwo;
            if(one > two) return true;
