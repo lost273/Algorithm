@@ -6,17 +6,19 @@ public class SortInsert extends Algorithm {
         super("SortInsert");
     }
     @Override
-    public void Sort(int a[]){
-        int i, j, x;
-        for ( i = 0; i < a.length; i++) {
-            x = a[i];
+    public <T> void Sort(T[] array){
+        int i, j;
+        T temp;
+        
+        for ( i = 0; i < array.length; i++) {
+            temp = array[i];
             //search for the place of the element in the finished sequence
-            for ( j = i-1; j >= 0 && a[j] > x; j--){
+            for ( j = i-1; j >= 0 && MoreOperator(array[j],temp); j--){
                 //move the element to the right
-                a[j+1] = a[j];
+                array[j+1] = array[j];
             }
             // insert the element into the found place
-            a[j+1] = x;
+            array[j+1] = temp;
         }
     }
 }
