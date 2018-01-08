@@ -6,6 +6,6 @@ import algorithmpackage.*;
 
 public class SortQuickTest {
     public static void main(String[] args){
-        TestModel.StartIntTest(new SortQuick());
+        TestModel.StartTest(new SortQuick());
     }
 }

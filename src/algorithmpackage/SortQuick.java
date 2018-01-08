@@ -6,21 +6,21 @@ public class SortQuick extends Algorithm {
         super("SortQuick");
     }
     @Override
-    public void Sort(int items[]){
-        qs(items, 0, items.length-1);
+    public <T> void Sort(T[] array){
+        qs(array, 0, array.length-1);
     }
     //recursive version
-    private void qs(int items[], int left, int right){
-        int i, j, x, y;
-        
+    private <T> void qs(T[] items, int left, int right){
+        int i, j;
+        T x, y;
         i = left; j = right;
         x = items[(left+right)/2];
         
         do{
-            while((items[i] < x) && (i < right)) {
+            while(MoreOperator(x, items[i]) && (i < right)) {
                 i++;
             }
-            while((x < items[j]) && (j > left)){
+            while(MoreOperator(items[j], x) && (j > left)){
                 j--;
             }
             if(i <= j){
