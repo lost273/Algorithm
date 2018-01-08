@@ -6,6 +6,6 @@ import algorithmpackage.*;
 
 public class SortSelectTest{
     public static void main(String[] args){
-        TestModel.StartIntTest(new SortSelect());
+        TestModel.StartTest(new SortSelect());
     }
 }
