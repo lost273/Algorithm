@@ -24,18 +24,18 @@ public class SortShell extends Algorithm {
     }
     
     @Override
-    public void Sort(int a[]) {
+    public <T> void Sort(T[] array) {
         int inc, i, j, s;
         int seq[] = new int[40];
-        s = increment(seq, a.length);
+        s = increment(seq, array.length);
         while (s >= 0) {
             inc = seq[s--];
-            for (i = inc; i < a.length; i++) {
-                int temp = a[i];
-                for (j = i - inc; (j >= 0) && (a[j] > temp); j -= inc){
-                    a[j+inc] = a[j];
+            for (i = inc; i < array.length; i++) {
+                T temp = array[i];
+                for (j = i - inc; (j >= 0) && (MoreOperator(array[j], temp)); j -= inc){
+                    array[j+inc] = array[j];
                 }
-                a[j+inc] = temp;
+                array[j+inc] = temp;
             }
         }
     }
