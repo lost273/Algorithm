@@ -15,7 +15,7 @@ public class SortBubbleV2 {
             }
         }
         for(int a : array){
-            System.out.print(i + " ");
+            System.out.print(a + " ");
         }
     }
 }
