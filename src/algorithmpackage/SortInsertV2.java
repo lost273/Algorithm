@@ -8,9 +8,10 @@ public class SortInsertV2 {
         int leftIndex, buffer;
         for(int passIndex = 0; passIndex < array.length; passIndex++){
             buffer = array[passIndex];
-            for(leftIndex = pass - 1; (leftIndex >= 0) && ;){
-            
+            for(leftIndex = passIndex - 1; (leftIndex >= 0) && (array[leftIndex] > buffer); leftIndex--){
+                array[leftIndex + 1] = array[leftIndex];
             }
+            array[leftIndex + 1] = buffer;
         }
         
         for(int a : array){
